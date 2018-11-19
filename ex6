@@ -1,0 +1,19 @@
+#include<iostream>
+#include <locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int horas, sb, minutos, segundos;
+	cout<<"Digite a duração do evento em segundos: ";
+	cin>>segundos;
+	
+	horas=(segundos/3600);
+	sb=segundos-(horas*3600);
+	minutos=sb/60;
+	segundos=sb-(minutos*60);
+	
+	cout<<"Tempo do evento: "<<horas<<"horas"<<minutos<<"min. e"<<segundos<<"seg."<<endl;
+}
