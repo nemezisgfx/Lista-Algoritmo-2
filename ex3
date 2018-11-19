@@ -1,0 +1,17 @@
+#include <iostream>
+#include <locale.h> //biblioteca para colocar acentos nas palvras
+
+using namespace std;
+
+main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	int anos, meses, dias, total;
+	cout<<"Digite a idade em anos, meses e dias: ";
+	cin>>anos>>meses>>dias;
+	
+	total=(anos*365+(meses*30)+dias;
+	
+	cout<<"A idade em dias de é "<<total<<endl;
+}
