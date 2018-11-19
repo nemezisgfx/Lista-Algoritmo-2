@@ -1,0 +1,17 @@
+#include <iostream>
+#include <locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int anos, meses, dias, total;
+	cout<<"Digite a idade em dias: ";
+	cin>>total;
+	
+	anos=total/365;
+	meses=(total-anos*365)/30;
+	dias=(total-anos*365-meses*30);
+	cout<<"A idade em anos, meses e dias é "<<anos<<meses<<dias;
+}
