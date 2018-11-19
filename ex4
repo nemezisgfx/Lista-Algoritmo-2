@@ -13,5 +13,5 @@ main(){
 	anos=total/365;
 	meses=(total-anos*365)/30;
 	dias=(total-anos*365-meses*30);
-	cout<<"A idade em anos, meses e dias é "<<anos<<meses<<dias;
+	cout<<"A idade em anos, meses e dias é "<<anos<<meses<<dias<<endl;
 }
