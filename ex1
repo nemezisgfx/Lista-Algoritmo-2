@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip> //biblioteca para o uso da setprecision para definir as casas decimais
+#include <math.h> //biblioteca matemática
+
+using namespace std;
+
+int main()
+{
+ float x1, x2, y1, y2, dist;
+ 
+ cout<<"Digite dois numeros (ex.: 0.0 0.0): ";   
+ cin >> x1 >> y1;
+ 
+ cout<<"Digite mais dois numeros (ex.: 0.0 0.0): ";
+ cin >> x2 >> y2;
+
+ dist=sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1)); //calculo para definir a distancia. (sqrt = raiz quadrada)
+
+ cout<<fixed<<setprecision(4)<<dist<<endl;
+
+ return 0;
+}
