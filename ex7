@@ -1,0 +1,18 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int total, imposto, dist, custofab;
+	cout<<"Digite o custo de fábrica do carro: ";
+	cin>>custofab;
+	
+	imposto=(45*custofab)/100;
+	dist=(28*custofab)/100;
+	total=custofab+imposto+dist;
+	
+	cout<<"O carro sairia por: "<<total<<"R$"<<endl;
+}
