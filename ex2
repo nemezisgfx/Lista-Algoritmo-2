@@ -1,0 +1,26 @@
+#include <iostream>
+#include <locale.h> //biblioteca para colocar acentos nas palvras
+
+using namespace std;
+
+main () {
+	
+	setlocale(LC_ALL, "Portuguese");
+	int a, b, c;
+	cout<<"Digite um número inteiro: ";
+	cin>>a;
+	
+	cout<<"Digite outro número: ";
+	cin>>b;
+	
+	cout<<"Digite mais um número: ";
+	cin>>c;
+	
+	int r=(a+b)*(a+b);
+	int s=(b+c)*(b+c);
+	
+	int d=r+s/2;
+	
+	cout<<"O resultado é = "<<d<<endl;
+	
+}
