@@ -6,9 +6,9 @@ using namespace std;
 main(){
 	setlocale(LC_ALL, "Portuguese");
 	
-	int cod,n1,n2,n3,media ;
+	int cedilha,n1,n2,n3,media ;//cedilha = cod
 	cout<<"Digite o código do aluno: ";
-	cin>>cod;
+	cin>>cedilha;
 	
 	cout<<"Digite a primeira nota: ";
 	cin>>n1;
@@ -27,7 +27,7 @@ main(){
 			else
 			media = (n3*4 + n1*3 + n2*3)/10;
 	
-	cout<<"Código: "<<cod<<endl;
+	cout<<"Código: "<<cedilha<<endl;
 	cout<<"1ª Nota: "<<n1<<endl;
 	cout<<"2ª Nota: "<<n2<<endl;
 	cout<<"3ª Nota: "<<n3<<endl;
