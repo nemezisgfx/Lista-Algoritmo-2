@@ -1,0 +1,21 @@
+#include<iostream>
+#include <locale.h>
+
+using namespace std;
+
+main(){
+	int IDADE;
+	setlocale(LC_ALL, "Portuguese");
+	
+    cout<<"Digite a sua idade : ";
+	cin>>IDADE;
+	
+
+
+	if ((IDADE>=5) && (IDADE<=10)) 
+		cout<<"Infantil";
+	if ((IDADE>=11) && (IDADE<=17)) 
+		cout<<"Juvenil";
+	if (IDADE>=18)
+	    cout<<"Adulto";		
+}
