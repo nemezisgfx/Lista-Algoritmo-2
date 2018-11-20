@@ -1,0 +1,29 @@
+#include<iostream>
+#include <locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int x,y,z,maior;
+	cout<<"Digite o primeiro número: ";
+	cin>>x;
+	
+	cout<<"Digite o segundo número: ";
+	cin>>y;
+	
+	cout<<"Digite o terceiro número: ";
+	cin>>z;
+	
+	if(x >= y)
+	maior=x;
+	
+	else
+	maior=y;
+	
+	if(maior <= z)
+	maior=z;
+	
+	cout<<"O maior número é: "<<maior<<endl;
+}
