@@ -1,0 +1,19 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int numero,div;
+	cout<<"Digite um número: ";
+	cin>>numero;
+	
+	div=numero%2;
+	
+	if (div = 0)
+	cout<<"O número é par";
+	else
+	cout<<"O número é impar";
+}
