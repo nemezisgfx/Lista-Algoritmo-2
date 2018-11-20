@@ -1,0 +1,22 @@
+#include<iostream>
+#include <locale.h>
+
+using namespace std;
+
+main(){
+	int A,B,MULT;
+	setlocale(LC_ALL, "Portuguese");
+	
+    cout<<"Digite o primeiro numero: ";
+	cin>>A;
+	
+	cout<<"Digite o segundo numero: ";
+	cin>>B;	
+	
+	MULT=A % B;
+	
+	if (MULT==0)
+		cout<<"São múltiplos";
+	else
+		cout<<"Não são múltiplos";		
+}
