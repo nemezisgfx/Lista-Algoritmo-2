@@ -1,0 +1,32 @@
+#include<iostream>
+
+using namespace std;
+
+main(){
+	int a,b,c,d,e,f,x,y,n,z;
+	cout<<"Digite o valor a: ";
+	cin>>a;
+	
+	cout<<"Digite o valor de b: ";
+	cin>>b;
+	
+	cout<<"Digite o valor de c: ";
+	cin>>c;
+	
+	cout<<"Digite o valor de d: ";
+	cin>>d;
+	
+	cout<<"Digite o valor de e: ";
+	cin>>e;
+	
+	cout<<"Digite o valor de f:";
+	cin>>f;
+	
+	n=(a*e)-(b*d);
+	
+	x=((c*e)-(b*f))/n;
+	
+	y=((a*f)-(c*d))/n;
+	
+	cout<<"X= "<<x<<endl<<"Y= "<<y<<endl;
+  }
