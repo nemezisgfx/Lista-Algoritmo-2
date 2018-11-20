@@ -1,0 +1,84 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int cod, qtde;
+	float valor;
+	
+	cod = 0;
+	qtde = 0;
+	valor = 0;
+	
+	cout<<"Informe o código: ";
+	cin>>cod;
+	
+	if (cod != 100,101,102,103,104,105)
+	cout<<"CÓDIGO INVÁLIDO!"<<endl;
+	
+	return 6;
+	
+	if(cod = 100)
+	cout<<"Informe a quantidade: ";
+	cin>>qtde;
+	
+	valor = (1.20 * qtde);
+	cout<<"O valor do Cachorro Quente é: "<<valor<<endl;
+	system("PAUSE");
+	
+	return 0;
+	
+	if (cod = 101)
+	cout<<"Informe a quantidade: ";
+	cin>>qtde;
+	
+	valor = (1.30 * qtde);
+	cout<<"O valor do Bauru Simples é: "<<valor<<endl;
+	system("PAUSE");
+	
+	return 1;
+	
+	if (cod = 102)
+	cout<<"Informe a quantidade: ";
+	cin>>qtde;
+	
+	valor = (1.50 * qtde);
+	cout<<"O valor do Bauru com Ovo é: "<<valor<<endl;
+	system("PAUSE");
+	
+	return 2;
+	
+	if (cod = 103)
+	cout<<"Informe a quantidade: ";
+	cin>>qtde;
+	
+	valor = (1.20 * qtde);
+	cout<<"O valor do Hambúrguer é: "<<valor<<endl;
+	system("PAUSE");
+	
+	return 3;
+	
+	if (cod = 104)
+	cout<<"Informe a quantidade: ";
+	cin>>qtde;
+	
+	valor = (1.30 * qtde);
+	cout<<"O valor do Cheeseburguer é: "<<valor<<endl;
+	system("PAUSE");
+	
+	return 4;
+	
+	if (cod = 105)
+	cout<<"Informe a quantidade: ";
+	cin>>qtde;
+	
+	valor = (1.00 * qtde);
+	cout<<"O valor do Refrigerante é: "<<valor<<endl;
+	system("PAUSE");
+	
+	return 5;
+	
+}
