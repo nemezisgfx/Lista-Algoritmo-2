@@ -1,0 +1,40 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int cod,n1,n2,n3,media ;
+	cout<<"Digite o código do aluno: ";
+	cin>>cod;
+	
+	cout<<"Digite a primeira nota: ";
+	cin>>n1;
+	
+	cout<<"Digite a segunda nota: ";
+	cin>>n2;
+	
+	cout<<"Digite a terceira nota: ";
+	cin>>n3;
+	
+	if((n1>n2) and (n1>n3))
+		media = (n1*4 + n2*3 + n3*3)/10;
+	else
+		if ((n2>n1) and (n2>n3))
+			media = (n2*4 + n1*3 + n3*3)/10;
+			else
+			media = (n3*4 + n1*3 + n2*3)/10;
+	
+	cout<<"Código: "<<cod<<endl;
+	cout<<"1ª Nota: "<<n1<<endl;
+	cout<<"2ª Nota: "<<n2<<endl;
+	cout<<"3ª Nota: "<<n3<<endl;
+	cout<<"Média: "<<media<<endl;
+	
+	if (media >= 5)
+		cout<<"APROVADO!";
+	else
+		cout<<"REPROVADO!";
+}
