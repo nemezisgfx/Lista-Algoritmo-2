@@ -1,0 +1,53 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main() {
+    float a, b, c, maior, menor, meio;
+    cout<<"Digite o valor de [A]: ";
+    cin>>a;
+    
+    cout<<"Digite o valor de [B]: ";
+    cin>>b;
+    
+    cout<<"Digite o valor de [C]: ";
+    cin>>c;
+    
+    if(a>=b && a>=c)
+    {    
+        maior=a; 
+    }
+    else
+    if (b>=c && b>=a)
+    {
+        maior=b;
+    }
+    else
+    {
+      maior=c;
+    }
+
+    if((a>=b && a<=c)||(a<=b && a>=c))
+    {
+      meio=a;
+    }
+    else
+    if((b>=c && b<=a) || (b<=c && b>=a))
+    {
+      meio=b;
+    }
+    else
+    {
+      meio=c;
+    }
+
+    a=maior;
+    b=meio;
+    c=menor;
+
+    if(a>=b+c)
+    {
+      cout<<"Não forma Triangulo"<<endl;
+    }
+}
