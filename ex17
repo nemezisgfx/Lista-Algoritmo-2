@@ -1,0 +1,35 @@
+#include<iostream>
+#include<locale.h>
+#include<string>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int im,ih,h; //IM=ideal mulher, IH=ideal Homem, H=altura.
+	string sexo;
+	int feminino;
+	int masculino;
+
+	
+	cout<<"Informe a altura (em cm): ";
+	cin>>h;
+	
+	cout<<"informe o sexo: ";
+	cin>>sexo;	
+	
+	if (sexo == "masculino")
+	{
+		ih=(72.7 * h)-58;
+		cout<<"O peso ideal é: "<<ih;
+	}
+	else
+	{
+		if(sexo == "feminino")
+		{
+		im=(62.1 * h)-44.7;
+		cout<<"O peso ideal é: "<<im;
+		}
+	}
+}
