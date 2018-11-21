@@ -1,0 +1,24 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int dur, i, f;
+	
+	cout<<"Escreva a hora do início (Em inteiro): ";
+	cin>>i;
+	
+	cout<<"Escreva a hora do final (Em inteiro): ";
+	cin>>f;
+	
+	dur=f-i;
+	
+	if(i>f)
+	{
+		dur=(24-i)+f;
+	}
+	cout<<"Total de horas: "<<dur<<endl;
+}
