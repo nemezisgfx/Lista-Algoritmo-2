@@ -1,0 +1,45 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	
+	int opcao, n1, n2, n3, media;
+	cout<<"Digite a primeira nota: ";
+	cin>>n1;
+	
+	cout<<"Digite a segunda nota: ";
+	cin>>n2;
+	
+	cout<<"Digite a terceira nota: ";
+	cin>>n3;
+	
+	cout<<endl<<"===================================="<<endl;
+	cout<<"====Escolha uma opção de calculo===="<<endl;
+	cout<<"==== 1 - Para média aritmética  ===="<<endl;
+	cout<<"==== 2 - Para média ponderada   ===="<<endl;
+	cout<<"==== 3 - Para média harmonica   ===="<<endl;
+	cout<<"===================================="<<endl;
+	cout<<"Escolha uma opção: ";
+	cin>>opcao;
+	
+	switch (opcao)
+	{
+		case 1:
+			media = (n1 + n2 + n3) / 3;
+			break;
+		case 2:
+			media = (n1 * 3 + n2 * 3 + n3 * 4) / 10;
+			break;
+		case 3:
+			media = 3/(1/n1 + 1/n2 + 1/n3);
+			break;
+		default:
+			cout<<"Opção inválida!"<<endl;
+	}
+	
+	cout<<"Média = "<<media<<endl;
+}
