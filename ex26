@@ -1,0 +1,35 @@
+#include<iostream>
+#include<iomanip>
+#include<locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	float valor,resultado;
+	int mod100,mod50,mod10,mod5,mod1;
+	cout<<"Digite o valor (R$)";
+	cin>>valor;
+	
+	mod100=valor/100;
+	valor=valor-mod100*100;
+	
+	mod50=valor/50;
+	valor=valor-mod50*50;
+	
+	mod10=valor/10;
+	valor=valor-mod10*10;
+	
+	mod5=valor/5;
+	valor=valor-mod5*5;
+	
+	mod1=valor/1;
+	
+	cout<<"NOTAS: "<<endl;
+	cout<<mod100<<setprecision(3)<<" nota(s) de R$100.00"<<endl;
+	cout<<mod50<<setprecision(3)<<" nota(s) de R$50.00"<<endl;	
+	cout<<mod10<<setprecision(3)<<" nota(s) de R$10.00"<<endl;
+	cout<<mod5<<setprecision(3)<<" nota(s) de R$5.00"<<endl;
+	cout<<mod1<<setprecision(3)<<" nota(s) de R$1.00"<<endl;
+}
