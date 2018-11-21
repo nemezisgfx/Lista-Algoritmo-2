@@ -1,0 +1,36 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	
+	int saldo,valor;
+	cout<<"Digite o saldo médio: ";
+	cin>>saldo;
+	
+	if ((saldo >= 0) and (saldo <= 200))
+	{
+		cout<<"Você não possui crédito para essa operação";
+	}
+	
+	if ((saldo >= 201) and (saldo <= 400))
+	{
+		valor = (saldo * 0.2);
+		cout<<"O seu limite de crédito é: "<<valor;
+	}
+	
+	if ((saldo >= 401) and (saldo <=600))
+	{
+		valor = (saldo * 0.3);
+		cout<<"O seu limite de crédito é: "<<valor;
+	}
+	
+	if (saldo >= 601)
+	{
+		valor = (saldo * 0.4);
+		cout<<"O seu limite de crédito é: "<<valor;
+	}
+}
