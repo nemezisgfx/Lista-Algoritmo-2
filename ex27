@@ -1,0 +1,36 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int ipi,cod1,qtde1,cod2,qtde2,total;
+	float val1,val2;
+	
+	cout<<"Qual a porcentagem do IPI (%): ";
+	cin>>ipi;
+	
+	cout<<"Digite o código da 1ª peça: ";
+	cin>>cod1;
+	
+	cout<<"Digite o valor unitário da peça: ";
+	cin>>val1;
+	
+	cout<<"Digite a quantidade: ";
+	cin>>qtde1;
+	
+	cout<<"Digite o código da 2ª peça: ";
+	cin>>cod2;
+	
+	cout<<"Digite o valor unitário da peça: ";
+	cin>>val2;
+	
+	cout<<"Digite a quantidade: ";
+	cin>>qtde2;
+	
+	total=(val1*qtde1+val2*qtde2)*(ipi/100+1);
+	
+	cout<<"Total = "<<total<<endl;
+}
