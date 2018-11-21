@@ -1,0 +1,62 @@
+#include<iostream>
+#include <locale.h>
+
+using namespace std;
+
+main(){
+	int cargo;
+	float salario=0 , salarionovo=0, diferenca=0;
+	
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+    cout<<"Digite o cod: ";
+	cin>>cargo;
+	
+	cout<<"Digite o salario: ";
+	cin>>salario;
+	
+	//processamento
+
+	  
+	if (cargo==101)//GERENTE
+	{
+      salarionovo = salario + (salario * 0.10);
+	  diferenca = salarionovo - salario;
+	  cout<<"*****Gerente*****"<<endl;
+	  cout<<"O novo Sálario é: R$"<<salarionovo<<endl;
+	  cout<<"O antigo Sálario é: R$"<<salario<<endl;
+	  cout<<"Houve um acrecimo de: R$"<<diferenca<<endl;
+    }
+	  
+	if (cargo==102)//ENGENHEIRO
+	{
+	
+	  salarionovo = salario + (salario * 0.20);
+	  diferenca = salarionovo - salario;
+	  cout<<"*****Engenheiro*****"<<endl;
+	  cout<<"O novo Sálario é: R$"<<salarionovo<<endl;
+	  cout<<"O antigo Sálario é: R$"<<salario<<endl;
+	  cout<<"Houve um acrecimo de: R$"<<diferenca<<endl;
+    }
+	if (cargo==103)//TECNICO
+	{
+	  salarionovo = salario + (salario * 0.30);
+	  diferenca = salarionovo - salario;
+	  cout<<"*****Técnico*****"<<endl;
+	  cout<<"O novo Sálario é: R$"<<salarionovo<<endl;
+	  cout<<"O antigo Sálario é: R$"<<salario<<endl;
+	  cout<<"Houve um acrecimo de: R$"<<diferenca<<endl;
+    } 
+    
+	if ((cargo!=101)&&(cargo!=102)&&(cargo!=103))
+	{
+	  salarionovo = salario + (salario * 0.40);
+	  diferenca = salarionovo - salario;
+	  cout<<"*****Não Registrado*****"<<endl;
+	  cout<<"O novo Sálario é: R$"<<salarionovo<<endl;
+	  cout<<"O antigo Sálario é: R$"<<salario<<endl;
+	  cout<<"Houve um acrecimo de: R$"<<diferenca<<endl; 
+    }
+	
+}
