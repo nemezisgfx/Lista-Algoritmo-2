@@ -1,0 +1,50 @@
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+int main(){
+  setlocale(LC_ALL, "Portuguese");
+
+  float ma;
+  int id,n1,n2,n3,me;
+
+  cout<<"Digite o Número de Indentificação: ";
+  cin>>id;
+
+  cout<<"Digite a primeira nota: ";
+  cin>>n1;
+
+  cout<<"Digite a segunda nota: ";
+  cin>>n2;
+
+  cout<<"Digite a terceira nota: ";
+  cin>>n3;
+
+  cout<<"Digite a Média dos Exercícios: ";
+  cin>>me;
+
+  ma = (n1 + n2 * 2 + n3 * 3 + me )/7;
+
+  cout<<"A média de aproveitamento é: "<<ma<<endl;
+
+  if(ma>=9){
+    cout<<"Conceito A, aluno APROVADO!"<<endl;
+  }
+
+  if((ma>=7.5) && (ma<9)){
+    cout<<"Conceito B, aluno APROVADO!"<<endl;
+  }
+  
+  if((ma>=6) && (ma<7.5)){
+    cout<<"Conceito C, aluno APROVADO!"<<endl;
+  }
+  
+  if((ma>=4) && (ma<6)){
+    cout<<"Conceito D, aluno REPROVADO!"<<endl;
+  }
+  
+  if(ma<4){
+    cout<<"Conceito E, aluno REPROVADO!"<<endl;
+  }
+}
